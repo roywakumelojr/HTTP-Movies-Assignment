@@ -53,7 +53,7 @@ body {
   width: 75%;
   margin: 1rem auto;
 }
-.update-button, .save-button {
+.delete-button, .update-button, .save-button {
   position: absolute;
   right: 25px;
   border: 1px solid grey;
@@ -64,7 +64,6 @@ body {
 .save-button {
   top: 25px;
 }
-
 .save-button:hover {
   background-color: green;
   color: white;
@@ -75,15 +74,21 @@ body {
   top: 70px;
   font-size: 1rem;
 }
-
 .update-button:hover {
   background-color: green;
   color: white;
   cursor: pointer;
 }
 
-
-
+.delete-button {
+  top: 125px;
+  font-size: 1rem;
+}
+.update-button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
 
 .home-button {
   padding: 5px 10px;
