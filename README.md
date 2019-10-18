@@ -31,7 +31,7 @@ Movie object format:
 ### Part 2 - Deleting A Movie:
 
 - Add a delete button in the movie component that makes a DELETE request
-- When the call comes back successfully, route the user to `/movies` where they will see the updated movie list without the deleted movie
+- When the call comes back successfully, route the user to `/movies` where they will see the updated movie list without the deleted movie.
 
 ### Part 3 (Stretch) - Adding A Movie:
 
