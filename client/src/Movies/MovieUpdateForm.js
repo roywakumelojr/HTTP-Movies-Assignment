@@ -35,7 +35,7 @@ const MovieUpdateForm = (props) => {
     }
 
     const handleSubmit = event => {
-        e.preventDefault();
+        event.preventDefault();
             if ( movie.title !== "" && movie.director !== "" && movie.stars !== "" &&movie.metascore !== "") {
                 console.log(movie);
                 console.log("submit handler");
@@ -74,40 +74,44 @@ const MovieUpdateForm = (props) => {
         }
     }
     return (
-        <Form onSubmit={handleSubmit}>
-            <Input>
-                type="text"
-                name="title"
-                placeholder="Title"
-                onChange={handleChange}
-                value={movie.title}
-            </Input>
 
-            <Input>
-                type="text"
-                name="director"
-                placeholder="Director"
-                onChange={handleChange}
-                value={movie.director}
-            </Input> 
-
-            <Input>
-                type="number"
-                name="metascore"
-                placeholder="Metascore"
-                onChange={handleChange}
-                value={movie.metascore}
-            </Input>
-
-            <TextArea>
-                type="text"
-                onChange={handleChange}
-                value={movie.stars}
-                name="stars"
-                placeholder="Add a Comma After Every Star's Full Name"
-            </TextArea>
-          <Button>Submit Movie Update</Button>
-        </Form>
+        <div className="Form-Container">
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    name="title"
+                    placeholder="Title"
+                    onChange={handleChange}
+                    value={movie.title}>
+                </input>
+    
+                <input
+                    type="text"
+                    name="director"
+                    placeholder="Director"
+                    onChange={handleChange}
+                    value={movie.director}>
+                </input> 
+    
+                <input
+                    type="number"
+                    name="metascore"
+                    placeholder="Metascore"
+                    onChange={handleChange}
+                    value={movie.metascore}>
+                </input>
+    
+                <input
+                    className="TextField"
+                    type="TextArea"
+                    onChange={handleChange}
+                    value={movie.stars}
+                    name="stars"
+                    placeholder="Add a Comma After Every Star's Full Name">
+                </input>
+              <button>Submit</button>
+            </form>
+        </div>
     );
 
 }
