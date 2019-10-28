@@ -53,17 +53,41 @@ body {
   width: 75%;
   margin: 1rem auto;
 }
-.save-button {
+.delete-button, .update-button, .save-button {
   position: absolute;
-  top: 25px;
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;
 }
+
+.save-button {
+  top: 25px;
+}
 .save-button:hover {
   background-color: green;
   color: white;
+  cursor: pointer;
+}
+
+.update-button {
+  top: 70px;
+  font-size: 1rem;
+}
+.update-button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-button {
+  top: 125px;
+  font-size: 1rem;
+}
+.update-button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
 }
 
 .home-button {
@@ -74,4 +98,40 @@ body {
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.Form-Container {
+  display: flex;
+  width: 100%;
+  margin: 20px;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.TextField {
+  width: 350px;
+  height: 60px;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+button:hover{
+  background-color: green;
+  cursor: pointer;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
 }
